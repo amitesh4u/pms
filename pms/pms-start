@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo mvn spring-boot:run
