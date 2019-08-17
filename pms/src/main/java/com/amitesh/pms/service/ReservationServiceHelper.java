@@ -6,6 +6,8 @@ package com.amitesh.pms.service;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.commons.lang3.ObjectUtils;
+
 import com.amitesh.pms.entity.Reservation;
 import com.amitesh.pms.util.DateUtil;
 import com.amitesh.pms.util.RandomUtil;
@@ -58,6 +60,6 @@ public class ReservationServiceHelper {
 	}
 
 	public static boolean isStillInHouse(final Reservation reservation) {
-		return reservation.getCheckedOutAt().getTime() > System.currentTimeMillis();
+		return ObjectUtils.isEmpty(reservation.getCheckedOutAt()) || reservation.getCheckedOutAt().getTime() > System.currentTimeMillis();
 	}
 }
