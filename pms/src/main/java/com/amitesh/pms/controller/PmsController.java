@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-public class PmsController {
+public class PmsController implements IController {
 	
 	private static final String REQUEST_RECEIVED_AT = "Request Received at {} ";
 	private static final Logger LOGGER = LogManager.getLogger(PmsController.class);

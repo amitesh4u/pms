@@ -26,7 +26,7 @@ import com.amitesh.pms.service.SmartDoorLockService;
  */
 @RestController
 @RequestMapping("/service/v1/smartdoorlock/{doorLockNo}")
-public class SmartDoorLockController {
+public class SmartDoorLockController implements IController {
 
 	private static final String REQUEST_RECEIVED_AT_FOR_DOOR_LOCK_NO = "Request Received at {} for doorLockNo {}";
 

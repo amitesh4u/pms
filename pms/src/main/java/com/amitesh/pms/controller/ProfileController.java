@@ -27,7 +27,7 @@ import com.amitesh.pms.service.ReservationService;
  */
 @RestController
 @RequestMapping("/service/v1/profile/{profileId}")
-public class ProfileController {
+public class ProfileController implements IController {
 	
 	private static final String REQUEST_RECEIVED_AT_FOR_PROFILE_ID = "Request Received at {} for profileId {}";
 	private static final Logger LOGGER = LogManager.getLogger(ProfileController.class);

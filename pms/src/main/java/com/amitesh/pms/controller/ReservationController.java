@@ -29,7 +29,7 @@ import com.amitesh.pms.service.SmartDoorLockService;
 
 @RestController
 @RequestMapping("/service/v1/reservation/{reservationNo}")
-public class ReservationController {
+public class ReservationController implements IController {
 
 	private static final String REQUEST_RECEIVED_AT_FOR_RESERVATION_NO = "Request Received at {} for reservationNo {}";
 
